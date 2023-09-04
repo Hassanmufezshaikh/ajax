@@ -1,0 +1,36 @@
+body{
+    background:white;
+    margin:0;
+}
+
+.container{
+    background-color : whitesmoke;
+    width:500px;
+    height: 500px;
+    margin: left 30%;
+    margin-top:2%;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px grey;
+
+
+}
+
+.website{
+    background-color : grey;
+    height: 80px;
+    text-align: center;
+    padding: 1px 1px 3px 1px grey;
+    font-family: tahoma;
+
+
+}
+.header{
+    background-color : whitesmoke;
+    height: 80px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 2px grey;
+    font-family: tahoma;
+
+
+}

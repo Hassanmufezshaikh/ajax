@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="jquery-3.6.4.min.js"></script>
+    
     <title>ajax</title>
     <style>
       .centered-btn {
@@ -23,44 +24,37 @@
 <body>
     <div class="header text-center my-4" style="color: red; background-color: grey;"" >
         <h1 >
-            Insert Data into Database using Ajax in php
+            Display / Fetch Data from Database using Ajax in php
         </h1>
     </div>
 
     <div class="website">
-    <h2 id="messagedisplay">
+    <h3 id="messagedisplay">
 
-        </h2>
+    </h3>
     </div>
 
     <div class="container">
     <div class="  formpost text-center mt-5" style="color: blue;">
-    <form id="vedformid" method="post">
-        <table class="table ">
+    <form id="vedformid" method="get">
+    <table class="table" style="border-collapse: collapse; border: 2px solid black;">
+  <tr>
+    <th><a href="ajaxpost.php">ADD DATA</a></th>
+  </tr>
+  <tr>
+    <th><input type="submit" class="btn-primary" name="displaybtn" id="displaybtn"></th>
+  </tr>
+</table>
 
-        <tr>
-          <th class="msg" scope="col">Enter Name</th>
-          <td><input type="text" class="textbox" name="name" id="name"></td>
-        </tr>
-        <tr>
-          <th class="msg" scope="col">Enter Email ID</th>
-          <td><input type="text" class="textbox" name="email" id="email"></td>
-        </tr>
-        <tr>
-        <th class="msg" scope="col">Enter Contact</th>
-        <td><input type="text" class="textbox" name="contact" id="contact"></td>
-        </tr>
-        <th></th>
-        <td style="text-align: center;">
-          <input type="submit" class="btn centered-btn" name="insertbtn" id="insertbtn" value="Add">
-      </td>
-        </tr>
-    </table>
+<div id="displaydata">  </div>
+
     </form>
     </div>
 
 
-    </div>
+</div>
+
+
 
 
 <?php  
